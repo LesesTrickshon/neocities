@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img
+      src="/media/images/Paper not Signed.jpg"
+      id="paper1"
+      style="animation: start-spin 2s ease-out"
+    />
+    <img
+      src="/media/images/Paper Signed.jpg"
+      id="paper2"
+      style="
+        display: none;
+        animation: signed-spin 2s ease-in-out;
+        transform: rotate3d(1, 0, 0, 90deg);
+      "
+    />
+    <button onclick="SignPaper()"></button>
+
+    <audio id="signing sfx" src="/media/soundeffects/Edding short.aac"></audio>
+
+    <script>
+      function SignPaper() {
+        document.getElementById("paper1").style.display = "none";
+        document.getElementById("signing sfx").play();
+        document.getElementById("paper2").style.display = "";
+      }
+    </script>
+  </body>
+</html>
