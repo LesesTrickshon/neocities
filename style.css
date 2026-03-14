@@ -7,6 +7,9 @@ body {
     justify-content: center;
     align-items: center;
     background-color: black;
+    background-image: url(/media/images/Space\ Background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 img {
@@ -16,16 +19,20 @@ img {
 @keyframes start-spin {
     from {
         transform: rotate3d(1, 1, 1, 120deg);
+        filter: drop-shadow(0 0 0px #fff);
     } to {
         transform: rotate3d(1, 1, 1, 360deg);
+        filter: drop-shadow(0 0 10px #fff);
     }
 }
 
 @keyframes signed-spin {
     from {
         transform: rotate3d(1, 0, 0, 0deg);
+        filter: drop-shadow(0 0 10px #ffffcb);
     } to {
-        transform: rotate3d(1, 0, 0, 90deg);
+        transform: rotate3d(1, 0.1, -0.1, 90deg);
+        filter: drop-shadow(0 0 0px #ffffcb);
     }
 }
 
