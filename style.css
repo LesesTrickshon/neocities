@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap');
 body {
     width: 100vw;
     height: 100vh;
@@ -10,6 +11,8 @@ body {
     background-image: url(/media/images/Space\ Background.png);
     background-size: cover;
     background-repeat: no-repeat;
+    color: #fff;
+    font-family: 'Comic Relief';
 }
 
 img {
